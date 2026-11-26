@@ -1,0 +1,281 @@
+.about-page-hero {
+  background: #F8F7F9;
+  padding: 100px 0 85px;
+  text-align: center;
+}
+
+.about-page-hero h1 {
+  font-family: 'Poppins', serif;
+  font-size: clamp(38px, 6vw, 65px);
+  font-weight: 500;
+  color: #242124;
+  margin: 20px 0;
+}
+
+.about-page-hero h1 span,
+.about-story-content h2 span,
+.values-heading h2 span {
+  color: #4A2455;
+}
+
+.about-page-hero > .container > p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #777177;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.about-breadcrumb {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #777177;
+}
+
+.about-breadcrumb span:last-child {
+  color: #BF9D56;
+}
+
+/* Story */
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.about-story-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.about-story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.about-story-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #4A2455;
+  color: #FFFFFF;
+  padding: 25px 30px;
+  min-width: 250px;
+  border-radius: 12px 0 8px 0;
+  z-index: 3;
+}
+
+.about-story-badge span {
+  font-family: 'Poppins', serif;
+  color: #BF9D56;
+  font-size: 32px;
+  display: block;
+}
+
+.about-story-badge p {
+  font-size: 11px;
+  margin-top: 7px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.about-story-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: visible;
+}
+
+.about-story-content h2 {
+  margin: 18px 0;
+  overflow: visible;
+  padding-left: 3px;
+}
+
+.about-story-content > p {
+  color: #777177;
+  font-size: 14px;
+  line-height: 1.95;
+  margin-top: 18px;
+}
+
+.about-founder {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.founder-line {
+  width: 40px;
+  height: 2px;
+  background: #BF9D56;
+}
+
+.about-founder h3 {
+  font-family: 'Poppins', serif;
+  color: #4A2455;
+  font-size: 18px;
+}
+
+.about-founder p {
+  color: #777177;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Mission and Vision */
+
+.about-mission {
+  background: #F8F7F9;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.mission-card {
+  padding: 45px;
+  background: #FFFFFF;
+  border-bottom: 3px solid #BF9D56;
+}
+
+.vision-card {
+  background: #4A2455;
+  color: #FFFFFF;
+  border-bottom-color: #BF9D56;
+}
+
+.mission-number {
+  color: #BF9D56;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.mission-card h2 {
+  font-family: 'Poppins', serif;
+  font-size: 30px;
+  margin: 25px 0 15px;
+}
+
+.mission-card p {
+  color: #777177;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.vision-card p {
+  color: rgba(255,255,255,0.75);
+}
+
+/* Core Values */
+
+.values-heading {
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
+.values-heading h2 {
+  margin: 18px 0;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.about-value-card {
+  padding: 30px;
+  border: 1px solid #EEE9EF;
+  background: #FFFFFF;
+  transition: 0.3s ease;
+}
+
+.about-value-card:hover {
+  border-color: #BF9D56;
+  transform: translateY(-5px);
+}
+
+.about-value-card > span {
+  color: #BF9D56;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.about-value-card h3 {
+  color: #4A2455;
+  font-family: 'Poppins', serif;
+  font-size: 22px;
+  margin: 20px 0 12px;
+}
+
+.about-value-card p {
+  color: #777177;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 850px) {
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-story-image {
+    max-width: 600px;
+    height: 420px;
+    min-height: 420px;
+  }
+
+  .about-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-page-hero {
+    padding: 75px 0 65px;
+  }
+
+  .about-story-image,
+  .about-story-image img {
+    min-height: 350px;
+    height: 350px;
+  }
+
+  .about-story-badge {
+    right: 0;
+    bottom: 0;
+  }
+
+  .mission-grid,
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-card {
+    padding: 30px;
+  }
+
+  .about-value-card {
+    padding: 25px;
+  }
+}

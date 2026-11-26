@@ -1,0 +1,63 @@
+.featured-section {
+  background: #F8F7F9;
+}
+
+.featured-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 35px;
+  margin-bottom: 50px;
+}
+
+.featured-heading .section-title span {
+  color: #BF9D56;
+}
+
+.featured-heading .section-description {
+  max-width: 390px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 25px;
+}
+
+.project-card {
+  background: #FFFFFF;
+  border: 1px solid #e8e4e9;
+  overflow: hidden;
+}
+
+/* Remove gold border from first card - make all same */
+.project-card:first-child,
+.project-card:nth-child(1),
+.project-card.active {
+  border: 1px solid #e8e4e9;
+}
+
+.project-image {
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+  background: #4A2455;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* Number removed - hide it completely just in case it is still in JSX */
+.project-number {
+  display: none !important;
+}
